@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</head>
+<style>
+    header {
+        background-color: rgb(48, 48, 48);
+        color: antiquewhite;
+        padding: 10px;
+        text-align: center;
+    }
+
+    body {
+        margin: 15px 100px;
+    }
+
+    #label {
+        font-weight: bolder;
+    }
+
+    .btn-primary {
+        width: 200px;
+        padding: 5px;
+    }
+
+    #label {
+        margin: 20px 0px;
+    }
+
+    #links {
+        margin: 20px 0px;
+    }
+</style>
+
+<body>
+
+    <header>
+        <h1> Friend Finder Survey </h1>
+    </header>
+
+    <hr class="my-4">
+
+    <main>
+        <form>
+            <div class="form-container">
+                <label id="label"> YOUR INFO: </label>
+                <div class="form-group row">
+                    <label id="userName" for="name" class="col-sm-2 col-form-label">NAME: </label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="John Smith">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label id="userPhoto" for="inputemial" class="col-sm-2 col-form-label">PHOTO: </label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="Add a link to your photo">
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-4">
+
+            <div class="quetions form-group">
+                <h3>Question 1</h3>
+                <label>
+                    <h5> You always speak the truth? </h5>
+                </label>
+                <select class="form-control" id="question1">
+                    <option value="1">1 (Strongly Agree) </option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Disagree)</option>
+                </select>
+            </div>
+            <div class="quetions form-group">
+                <h3>Question 2</h3>
+                <label>
+                    <h5> You like to travel the world? </h5>
+                </label>
+                <select class="form-control" id="question2">
+                    <option value="1">1 (Strongly Agree) </option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Disagree)</option>
+                </select>
+            </div>
+            <div class="quetions form-group">
+                <h3>Question 3</h3>
+                <label>
+                    <h5> You like Experiencing new things? </h5>
+                </label>
+                <select class="form-control" id="question3">
+                    <option value="1">1 (Strongly Agree) </option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Disagree)</option>
+                </select>
+            </div>
+            <div class="quetions form-group">
+                <h3>Question 4</h3>
+                <label>
+                    <h5> You rarely hurt people? </h5>
+                </label>
+                <select class="form-control" id="question4">
+                    <option value="1">1 (Strongly Agree) </option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Disagree)</option>
+                </select>
+            </div>
+            <div class="quetions form-group">
+                <h3>Question 5</h3>
+                <label>
+                    <h5> You are an INTROVERT? </h5>
+                </label>
+                <select class="form-control" id="question5">
+                    <option value="1">1 (Strongly Agree) </option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Disagree)</option>
+                </select>
+            </div>
+            <div class="quetions form-group">
+                <h3>Question 6</h3>
+                <label>
+                    <h5> Your friends always want to hangout with you? </h5>
+                </label>
+                <select class="form-control" id="question6">
+                    <option value="1">1 (Strongly Agree) </option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Disagree)</option>
+                </select>
+            </div>
+            <div class="quetions form-group">
+                <h3>Question 7</h3>
+                <label>
+                    <h5> You like speaking your mind without any hesitation? </h5>
+                </label>
+                <select class="form-control" id="question7">
+                    <option value="1">1 (Strongly Agree) </option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Disagree)</option>
+                </select>
+            </div>
+            <div class="quetions form-group">
+                <h3>Question 8</h3>
+                <label>
+                    <h5> You always want to avoid an argument? </h5>
+                </label>
+                <select class="form-control" id="question8">
+                    <option value="1">1 (Strongly Agree) </option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Disagree)</option>
+                </select>
+            </div>
+            <div class="quetions form-group">
+                <h3>Question 9</h3>
+                <label>
+                    <h5> Your friends always wnat to take advice from you? </h5>
+                </label>
+                <select class="form-control" id="question9">
+                    <option value="1">1 (Strongly Agree) </option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Disagree)</option>
+                </select>
+            </div>
+            <div class="quetions form-group">
+                <h3>Question 10</h3>
+                <label>
+                    <h5> Respecting everyone is one of your principles? </h5>
+                </label>
+                <select class="form-control" id="question10">
+                    <option value="1">1 (Strongly Agree) </option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Disagree)</option>
+                </select>
+            </div>
+            
+        </form>
+    </main>
+
+    <footer>
+        <button id="submitButton" type="submit" class="btn btn-primary btn-lg btn-block"> Submit </button>
+        <div id="links">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a href="/api/friends">API Friends List</a></li>
+                <li class="list-group-item"><a href="https://github.com/jeetgpatel45/FriendFinder">Github
+                        Repository</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#submitButton').on('click', function (event) {
+            event.preventDefault();
+            console.log("you clicked");
+            var userInput = {
+                name: $('#userName').val().trim(),
+                photo: $('#userPhoto').val().trim(),
+                scores: [
+                    $('#question1').val().trim(),
+                    $('#question2').val().trim(),
+                    $('#question3').val().trim(),
+                    $('#question4').val().trim(),
+                    $('#question5').val().trim(),
+                    $('#question6').val().trim(),
+                    $('#question7').val().trim(),
+                    $('#question8').val().trim(),
+                    $('#question9').val().trim(),
+                    $('#question10').val().trim()
+                ]
+            };
+            console.log(userInput);
+        })
+
+    });
+
+</script>
+
+</html>
