@@ -6,12 +6,12 @@ console.table(friends);
 module.exports = function (app) {
 
     app.get("/api/friends", function (req, res) {
-       return res.json(friends);
+        return res.json(friends);
     });
     
-
     app.post("/api/friends", function (req, res) {
-
+        friends.push(req.body)
+        
         var response = req.body.scores;
         var matchName = '';
         var totalDifference = 10000;
@@ -30,6 +30,5 @@ module.exports = function (app) {
                 matchName = friends[i].name;
             };
         };
-    })
-    
+    });
 }

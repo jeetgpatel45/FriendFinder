@@ -52,5 +52,8 @@
    * The modal should display both the name and picture of the closest match.
 
 
-# I could not get modal to work. I will work on it later on. But it does get the user data.
+### Instead of the modal, I put the image below showing the matching friend.
+![Matching Freind](/images/Finder.JPG)
+
 # CHECK THE CONSOLE FOR THE USER DATA. 
+
